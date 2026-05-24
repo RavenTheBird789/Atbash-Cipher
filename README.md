@@ -1,5 +1,5 @@
 # Atbash-Cipher
-Python program for a simple atbash cipher (for both letters and numbers) to show basic cryptography and reversal concepts
+Python program for a simple atbash cipher (for both letters and numbers) to show basic cryptography and decryption concepts
 
 To download, simply type "git clone https://github.com/RavenTheBird789/Atbash-Cipher" in your command line within your terminal
 
