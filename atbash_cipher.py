@@ -3,8 +3,17 @@
 import time
 import os
 
+def purple(text: str) -> str:
+    # Wrap text in ANSI codes for purple color
+    return f"\033[35m{text}\033[0m"
+
+def bold(text: str) -> str:
+    # Wrap text in ANSI codes for bold formatting
+    return f"\033[1m{text}\033[0m"
+
 def atbash_cipher():
-    user_input = input("Enter text to encode/decode using an Atbash Cipher: ")
+    os.system('cls' if os.name == 'nt' else 'clear')
+    user_input = input(purple("Enter text to encode/decode using an Atbash Cipher: "))
     result = ""
     for char in user_input:
         if char.isalpha():
@@ -14,16 +23,12 @@ def atbash_cipher():
                 result += chr(ord('Z') - (ord(char) - ord('A'))) # Checks distance from 'A' and 'Z' for uppercase letters
         else:
             result += char # Characters from user input added to result string without changes
-    print("Result:", result)
-atbash_cipher()
-time.sleep(1)
-user_request = input("Would you like to use the Atbash Cipher again? (yes/no): ")
-if user_request.lower() in ['yes', 'y']:
-    os.system('cls' if os.name == 'nt' else 'clear')
-    atbash_cipher()
-else:
-    os.system('cls' if os.name == 'nt' else 'clear')
-    print("Thank you for using my Atbash Cipher!")
-    time.sleep(5)
-    os.system('cls' if os.name == 'nt' else 'clear')
-    os._exit(0)
+    print(purple(bold("Result:")), purple(bold(result)))
+    time.sleep(1)
+    user_request = input(purple("Would you like to use the Atbash Cipher again? (yes/no): "))
+    if user_request.lower() in ['yes', 'y']:
+        os.system('cls' if os.name == 'nt' else 'clear')
+        atbash_cipher()
+    else:
+        os.system('cls' if os.name == 'nt' else 'clear')
+        return
