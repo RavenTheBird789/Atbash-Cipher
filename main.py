@@ -17,11 +17,8 @@ def red(text: str) -> str:
     # Wrap text in ANSI codes for red color
     return f"\033[31m{text}\033[0m"
 
-equalSign = "="
-emptySpace = "   "
-
-def main():
-    while True:
+def trademark(main):
+    def wrapper():
         print(purple(bold("\n" + emptySpace + "Atbash Cipher")))
         print(purple(equalSign * 20))
         print(red("By: RavenTheBird789"))
@@ -30,6 +27,15 @@ def main():
         print(purple("1. Use the Atbash Cipher"))
         print(purple("2. Use the Numerical Atbash Cipher"))
         print(purple("3. Exit"))
+        main()
+    return wrapper
+
+equalSign = "="
+emptySpace = "   "
+
+@trademark
+def main():
+    while True:
         choice = input(purple("Enter your choice (1-3): "))
         if choice == '1':
             atbash_cipher()
