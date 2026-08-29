@@ -1,4 +1,4 @@
-# Atbash-Cipher
+# Atbash-Cipher 🔐
 Python script for an Atbash Cipher to show basic cryptography and decryption with both letters and numbers
 
 Installation
