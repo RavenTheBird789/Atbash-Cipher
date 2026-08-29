@@ -19,7 +19,7 @@ def red(text: str) -> str:
 
 def trademark(main):
     def wrapper():
-        print(purple(bold("\n" + emptySpace + "Atbash Cipher")))
+        print(purple(bold("\n" + (emptySpace * 3) + "Atbash Cipher")))
         print(purple(equalSign * 20))
         print(red("By: RavenTheBird789"))
         print(purple(equalSign * 20))
@@ -31,7 +31,7 @@ def trademark(main):
     return wrapper
 
 equalSign = "="
-emptySpace = "   "
+emptySpace = " "
 
 @trademark
 def main():
