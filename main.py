@@ -39,16 +39,18 @@ def main():
         choice = input(purple("Enter your choice (1-3): "))
         if choice == '1':
             atbash_cipher()
+            main();
         elif choice == '2':
             num_atbash_cipher()
+            main();
         elif choice == '3':
-            os.system('clear');
+            os.system('cls' if os.name == 'nt' else 'clear');
             print(purple(bold("Thank you for using my Atbash Cipher! Goodbye!")))
             time.sleep(5)
-            os.system('clear');
+            os.system('cls' if os.name == 'nt' else 'clear');
             os._exit(0);
         else:
             print(red(bold("Invalid choice. Please try again.")))
             time.sleep(3)
-            os.system('clear');
+            os.system('cls' if os.name == 'nt' else 'clear');
 main();
