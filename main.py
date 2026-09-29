@@ -52,5 +52,6 @@ def main():
         else:
             print(red(bold("Invalid choice. Please try again.")))
             time.sleep(3)
-            os.system('cls' if os.name == 'nt' else 'clear');
+            os.system('cls' if os.name == 'nt' else 'clear')
+            main();
 main();
