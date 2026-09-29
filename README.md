@@ -1,7 +1,7 @@
 # Atbash-Cipher 🔐
 Python script for an Atbash Cipher to show basic cryptography and decryption with both letters and numbers
 
-![Alt Text](Screenshot_20260929_010726_Termux.jpg)
+![Alt Text](images/Screenshot_20260929_010726_Termux.jpg)
 
 Installation
 * To download, simply type "git clone https://github.com/RavenTheBird789/Atbash-Cipher" in your command line within your terminal
