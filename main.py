@@ -20,9 +20,9 @@ def red(text: str) -> str:
 def trademark(main):
     def wrapper():
         print(purple(bold("\n" + (emptySpace * 3) + "Atbash Cipher")))
-        print(purple(equalSign * 20))
+        print(purple(equalSign * 19))
         print(red("By: RavenTheBird789"))
-        print(purple(equalSign * 20))
+        print(purple(equalSign * 19))
         print(purple("Please select an option:"))
         print(purple("1. Use the Atbash Cipher"))
         print(purple("2. Use the Numerical Atbash Cipher"))
